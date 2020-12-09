@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.TestMenu">
+   <children>
+      <Button layoutX="231.0" layoutY="138.0" mnemonicParsing="false" onAction="#goToInputQuestionsCategory" text="Input questions" />
+      <Button layoutX="218.0" layoutY="216.0" mnemonicParsing="false" onAction="#goToOneChoiceQuestionsCategory" text="One choice question" />
+      <Label layoutX="221.0" layoutY="43.0" text="Choose category">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
