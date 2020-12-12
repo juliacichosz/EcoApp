@@ -1,10 +1,11 @@
 package sample.model;
 
-import java.util.List;
+import java.util.*;
 
 public class QuestionWithOneChoice extends Question {
-    private List<String> answers;
-    private int correctAnswer;
+    public List<String> answers;
+    public int correctAnswer;
+    public int userAnswer;
 
     public QuestionWithOneChoice(){}
 
@@ -19,5 +20,17 @@ public class QuestionWithOneChoice extends Question {
     @Override
     public Question clone() {
         return new QuestionWithOneChoice(this);
+    }
+
+    public void shuffle() {
+        Random random = new Random();
+        List<Integer> indexList = Arrays.asList(0,1,2,3);
+        Collections.shuffle(indexList, random);
+        String[] tmp = new String[4];
+        for(int i = 0; i < 4; i++) {
+            tmp[indexList.get(i)] = answers.get(i);
+        }
+        answers = Arrays.asList(tmp.clone());
+        correctAnswer = indexList.get(correctAnswer);
     }
 }

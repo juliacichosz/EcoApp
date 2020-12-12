@@ -3,8 +3,7 @@ package sample.controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class OneChoiceQuestionsCategory extends AppController {
-
+public class EndOfTest extends AppController {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

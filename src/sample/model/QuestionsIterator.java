@@ -6,7 +6,7 @@ public class QuestionsIterator implements IIterator {
 
     public QuestionsIterator(Questions questions) {
         this.questions = questions;
-        currentPosition = 0;
+        currentPosition = -1;
     }
 
     @Override
@@ -16,6 +16,10 @@ public class QuestionsIterator implements IIterator {
 
     @Override
     public Question getNetx() {
-        return questions.getQuestions().get(currentPosition++);
+        if(hasMore()) {
+            return questions.getQuestions().get(++currentPosition);
+        } else {
+            return null;
+        }
     }
 }

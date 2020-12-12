@@ -1,8 +1,9 @@
 package sample.model;
 
 public class QuestionWithInput extends Question {
-    private String input;
-    private String correctAnswer;
+    public String input;
+    public String correctAnswer;
+    public String userAnswer;
 
     public QuestionWithInput(){}
 

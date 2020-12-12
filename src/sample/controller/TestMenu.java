@@ -14,11 +14,11 @@ public class TestMenu extends AppController {
 
     public void goToInputQuestionsCategory(ActionEvent actionEvent) {
         getInputQuestionsCategory();
-        goTo.execute(actionEvent, "../view/inputQuestionsCategory.fxml");
+        goTo.execute(actionEvent, "../view/inputQuestion.fxml");
     }
 
     public void goToOneChoiceQuestionsCategory(ActionEvent actionEvent) {
-        getOneChoiceSecondQuestionsCategory();
-        goTo.execute(actionEvent, "../view/oneChoiceQuestionsCategory.fxml");
+        getOneChoiceQuestionsCategory();
+        goTo.execute(actionEvent, "../view/oneChoiceQuestion.fxml");
     }
 }
