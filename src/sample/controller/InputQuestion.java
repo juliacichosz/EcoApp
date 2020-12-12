@@ -1,5 +1,6 @@
 package sample.controller;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import sample.model.*;
@@ -16,11 +17,11 @@ public class InputQuestion extends AppController {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        updateQuestion();
         displayQuestion();
     }
 
     public void displayQuestion() {
-        updateQuestion();
         cleanUnnecessaryFields();
         question.setText(currentQuestion.getContent());
     }
@@ -62,10 +63,15 @@ public class InputQuestion extends AppController {
         return !input.getText().equals("");
     }
 
-    public void nextQuestion() {
+    public void nextQuestion(ActionEvent actionEvent) {
         currentQuestion.clickNext(alert);
         if(currentQuestion.state instanceof AnsweredState) {
-            displayQuestion();
+            updateQuestion();
+            if(currentQuestion != null) {
+                displayQuestion();
+            } else {
+                goTo.execute(actionEvent, "../view/endOfTest.fxml");
+            }
         }
     }
 }

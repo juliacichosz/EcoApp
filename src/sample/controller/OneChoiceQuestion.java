@@ -1,5 +1,6 @@
 package sample.controller;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
@@ -21,6 +22,7 @@ public class OneChoiceQuestion extends AppController {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         initRadioButtons();
+        updateQuestion();
         displayQuestion();
     }
 
@@ -75,7 +77,6 @@ public class OneChoiceQuestion extends AppController {
     }
 
     public void displayQuestion() {
-        updateQuestion();
         setQuestionData();
         cleanUnnecessaryFields();
     }
@@ -93,10 +94,15 @@ public class OneChoiceQuestion extends AppController {
         answer3.setSelected(false);
     }
 
-    public void nextQuestion() {
+    public void nextQuestion(ActionEvent actionEvent) {
         currentQuestion.clickNext(alert);
         if(currentQuestion.state instanceof AnsweredState) {
-            displayQuestion();
+            updateQuestion();
+            if(currentQuestion != null) {
+                displayQuestion();
+            } else {
+                goTo.execute(actionEvent, "../view/endOfTest.fxml");
+            }
         }
     }
 }

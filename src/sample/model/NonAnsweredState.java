@@ -7,7 +7,6 @@ public class NonAnsweredState extends State {
         super(question);
     }
 
-    //Pamietac zeby nie zmieniala sie opcja zaznaczona gdy juz jest stan Aswered;
     @Override
     public void clickAnswer(Label label) {
         label.setText("");
@@ -19,7 +18,3 @@ public class NonAnsweredState extends State {
         label.setText("You have to answer the question.");
     }
 }
-
-/*
-przechodzic po pytaniach na koniec odpowiedzianych <-- FACTORY
-*/
