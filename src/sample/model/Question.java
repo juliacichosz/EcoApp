@@ -2,12 +2,12 @@ package sample.model;
 
 import javafx.scene.control.Label;
 
-import java.util.List;
-
 public abstract class Question implements IQuestion {
     String content;
     Integer id;
     public State state;
+    public String correctAnswer;
+    public String userAnswer;
 
     /*public Question(String content, Integer id, List<String> answers, int correctAnswer) {
         this.content = content;
@@ -24,6 +24,8 @@ public abstract class Question implements IQuestion {
             id = question.id;
             content = question.content;
             state = question.state;
+            correctAnswer = question.correctAnswer;
+            userAnswer = question.userAnswer;
         }
     }
 
@@ -62,4 +64,15 @@ public abstract class Question implements IQuestion {
         return content;
     }
 
+    public String getCorrectAnswer() {
+        return correctAnswer;
+    }
+
+    public String getUserAnswer() {
+        return userAnswer;
+    }
+
+    public boolean isCorrect() {
+        return correctAnswer == userAnswer;
+    }
 }

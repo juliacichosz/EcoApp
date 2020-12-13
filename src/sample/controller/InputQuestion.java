@@ -64,14 +64,16 @@ public class InputQuestion extends AppController {
     }
 
     public void nextQuestion(ActionEvent actionEvent) {
-        currentQuestion.clickNext(alert);
         if(currentQuestion.state instanceof AnsweredState) {
+            currentQuestion.clickNext(alert);
             updateQuestion();
             if(currentQuestion != null) {
                 displayQuestion();
             } else {
                 goTo.execute(actionEvent, "../view/endOfTest.fxml");
             }
+        } else {
+            currentQuestion.clickNext(alert);
         }
     }
 }

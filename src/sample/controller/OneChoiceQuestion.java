@@ -28,10 +28,12 @@ public class OneChoiceQuestion extends AppController {
 
     public void answerQuestion() {
         if(anyAnswerIsSelected()) {
-            currentQuestion.clickAnswer(alert);
             if (currentQuestion.state instanceof NonAnsweredState) {
+                currentQuestion.clickAnswer(alert);
                 setSelectedAnswer();
                 checkAnswer();
+            } else if(currentQuestion.state instanceof AnsweredState) {
+                currentQuestion.clickAnswer(alert);
             }
         } else {
             alert.setText("You didn't answer.");
@@ -44,18 +46,18 @@ public class OneChoiceQuestion extends AppController {
 
     private void setSelectedAnswer() {
         if(answer0.isSelected()) {
-            currentQuestion.userAnswer = 0;
+            currentQuestion.userAnswer = answer0.getText();
         } else if(answer1.isSelected()) {
-            currentQuestion.userAnswer = 1;
+            currentQuestion.userAnswer = answer1.getText();
         } else if(answer2.isSelected()) {
-            currentQuestion.userAnswer = 2;
+            currentQuestion.userAnswer = answer2.getText();
         } else if(answer3.isSelected()) {
-            currentQuestion.userAnswer = 3;
+            currentQuestion.userAnswer = answer3.getText();
         }
     }
 
     private void checkAnswer() {
-        if(currentQuestion.userAnswer == currentQuestion.correctAnswer) {
+        if(currentQuestion.userAnswer.equals(currentQuestion.correctAnswer)) {
             User.getINSTANCE().addPoints(currentQuestion.calculatePoints());
         }
     }
@@ -95,14 +97,16 @@ public class OneChoiceQuestion extends AppController {
     }
 
     public void nextQuestion(ActionEvent actionEvent) {
-        currentQuestion.clickNext(alert);
         if(currentQuestion.state instanceof AnsweredState) {
+            currentQuestion.clickNext(alert);
             updateQuestion();
             if(currentQuestion != null) {
                 displayQuestion();
             } else {
                 goTo.execute(actionEvent, "../view/endOfTest.fxml");
             }
+        } else {
+            currentQuestion.clickNext(alert);
         }
     }
 }

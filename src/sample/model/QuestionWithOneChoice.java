@@ -4,8 +4,6 @@ import java.util.*;
 
 public class QuestionWithOneChoice extends Question {
     public List<String> answers;
-    public int correctAnswer;
-    public int userAnswer;
 
     public QuestionWithOneChoice(){}
 
@@ -31,6 +29,5 @@ public class QuestionWithOneChoice extends Question {
             tmp[indexList.get(i)] = answers.get(i);
         }
         answers = Arrays.asList(tmp.clone());
-        correctAnswer = indexList.get(correctAnswer);
     }
 }

@@ -25,4 +25,8 @@ public class Questions {
     public IIterator createIterator() {
         return new QuestionsIterator(this);
     }
+
+    public void clean() {
+        questions.clear();
+    }
 }
