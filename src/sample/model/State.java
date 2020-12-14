@@ -2,6 +2,9 @@ package sample.model;
 
 import javafx.scene.control.Label;
 
+/*
+    State abstract class represents design pattern: STATE
+ */
 public abstract class State {
     public Question question;
 

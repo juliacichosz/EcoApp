@@ -4,24 +4,14 @@ import javafx.scene.control.Label;
 
 public abstract class Question implements IQuestion {
     String content;
-    Integer id;
     public State state;
     public String correctAnswer;
     public String userAnswer;
-
-    /*public Question(String content, Integer id, List<String> answers, int correctAnswer) {
-        this.content = content;
-        this.id = id;
-        this.answers = answers;
-        this.correctAnswer = correctAnswer;
-        this.state = new NonAnswerd(this);
-    }*/
 
     public Question() {}
 
     public Question(Question question) {
         if (question != null) {
-            id = question.id;
             content = question.content;
             state = question.state;
             correctAnswer = question.correctAnswer;
@@ -41,6 +31,9 @@ public abstract class Question implements IQuestion {
         state.clickNext(label);
     }
 
+    /*
+        Clone method represents design pattern: PROTOTYPE
+     */
     public abstract Question clone();
 
     @Override
@@ -50,10 +43,6 @@ public abstract class Question implements IQuestion {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public Integer getId() {
-        return id;
     }
 
     public State getState() {

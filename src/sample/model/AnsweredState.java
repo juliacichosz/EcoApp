@@ -2,6 +2,9 @@ package sample.model;
 
 import javafx.scene.control.Label;
 
+/*
+    AnsweredState class represents design pattern: STATE
+ */
 public class AnsweredState extends State {
     public AnsweredState(Question question) {
         super(question);

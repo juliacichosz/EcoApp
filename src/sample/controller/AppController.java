@@ -4,15 +4,18 @@ import sample.model.*;
 
 import java.util.*;
 
+/*
+    Implementing IInitializable (overriding initialize method) and extending AppController
+    represent design pattern: TEMPLATE METHOD
+ */
 public abstract class AppController implements IInitializable {
     GoTo goTo = new GoTo();
 
     static Questions questions = new Questions();
 
     //TODO: implement a lot of valid questions
-
     public void getInputQuestionsCategory() {
-        questions.clean();
+        clear();
         List<Question> allQuestions = new ArrayList<>();
         QuestionWithInput withInput = new QuestionWithInput();
         withInput.setContent("What is the correct answer?");
@@ -27,13 +30,15 @@ public abstract class AppController implements IInitializable {
         allQuestions.add(withInput1);
 
         Collections.shuffle(allQuestions);
+
+        //TODO: sensible amount of questions
         for(int i = 0; i < 2; i++) {
             questions.addQuestion(allQuestions.get(i));
         }
     }
 
     public void getOneChoiceQuestionsCategory() {
-        questions.clean();
+        clear();
         List<Question> allQuestions = new ArrayList<>();
         QuestionWithOneChoice withOneChoice = new QuestionWithOneChoice();
         List<String> answers = new ArrayList<>();
@@ -62,8 +67,15 @@ public abstract class AppController implements IInitializable {
         allQuestions.add(withOneChoice1);
 
         Collections.shuffle(allQuestions);
+
+        //TODO: sensible amount of questions
         for(int i = 0; i < 2; i++) {
             questions.addQuestion(allQuestions.get(i));
         }
+    }
+
+    public void clear() {
+        questions.clear();
+        User.getINSTANCE().clearScore();
     }
 }

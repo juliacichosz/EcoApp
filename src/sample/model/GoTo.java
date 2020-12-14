@@ -9,6 +9,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/*
+    GoTo class represents design pattern: COMMAND
+ */
 public class GoTo implements Command{
 
     public static void changeWindow(ActionEvent actionEvent, FXMLLoader loader) throws IOException {

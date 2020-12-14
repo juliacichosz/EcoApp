@@ -8,9 +8,7 @@ import java.util.ResourceBundle;
 public class TestMenu extends AppController {
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
+    public void initialize(URL url, ResourceBundle resourceBundle) {}
 
     public void goToInputQuestionsCategory(ActionEvent actionEvent) {
         getInputQuestionsCategory();

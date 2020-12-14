@@ -3,8 +3,10 @@ package sample.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+   User class represents design pattern: SINGLETON
+*/
 public final class User implements IObservable {
-    private static String name;
     private int score;
     private static User INSTANCE;
     private List<IObserver> observers = new ArrayList<>();
@@ -13,24 +15,12 @@ public final class User implements IObservable {
         score = 0;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        User.name = name;
-    }
-
     public int getScore() {
         return score;
     }
 
     public void setScore(int score) {
         this.score = score;
-    }
-
-    public static void setINSTANCE(User INSTANCE) {
-        User.INSTANCE = INSTANCE;
     }
 
     public static User getINSTANCE() {
@@ -57,8 +47,9 @@ public final class User implements IObservable {
 
     public void addPoints(int points) {
         this.score += points;
-        if(score != 0 && score % 10 == 0) {
-            notifyObservers();
-        }
+    }
+
+    public void clearScore() {
+        score = 0;
     }
 }

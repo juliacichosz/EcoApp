@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Questions {
     private List<Question> questions;
+    public int correctAnswersAmount = 0;
 
     public List<Question> getQuestions() {
         return questions;
@@ -26,7 +27,8 @@ public class Questions {
         return new QuestionsIterator(this);
     }
 
-    public void clean() {
+    public void clear() {
+        correctAnswersAmount = 0;
         questions.clear();
     }
 }

@@ -21,7 +21,9 @@ public class QuestionsSummary extends AppController {
         displayQuestion();
     }
 
-    /* Factory design pattern */
+    /*
+        displayQuestion method represents design pattern: FACTORY
+    */
     public void displayQuestion() {
         if(currentQuestion.isCorrect()) {
             displayCorrect(currentQuestion.clone());

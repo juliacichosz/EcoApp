@@ -7,9 +7,7 @@ import java.util.ResourceBundle;
 public class Start extends AppController {
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
+    public void initialize(URL url, ResourceBundle resourceBundle) {}
 
     public void goToMenu(ActionEvent actionEvent) {
         goTo.execute(actionEvent, "../view/menu.fxml");

@@ -55,6 +55,7 @@ public class InputQuestion extends AppController {
 
     private void checkAnswer() {
         if(currentQuestion.userAnswer.equals(currentQuestion.correctAnswer)) {
+            questions.correctAnswersAmount += 1;
             User.getINSTANCE().addPoints(currentQuestion.calculatePoints());
         }
     }

@@ -2,7 +2,6 @@ package sample.controller;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
-import sample.controller.AppController;
 
 import java.net.URL;
 import java.util.ResourceBundle;

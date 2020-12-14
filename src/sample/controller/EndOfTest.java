@@ -14,7 +14,14 @@ public class EndOfTest extends AppController {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        showPopupCongratulations();
         displayScore();
+    }
+
+    public void showPopupCongratulations() {
+        if((double)questions.correctAnswersAmount >= ((double)questions.getQuestions().size() * 0.7)) {
+            User.getINSTANCE().notifyObservers();
+        }
     }
 
     public void displayScore() {

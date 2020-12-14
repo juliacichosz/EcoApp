@@ -1,5 +1,8 @@
 package sample.model;
 
+/*
+    QuestionDecorator abstract class represents design pattern: DECORATOR
+ */
 public abstract class QuestionDecorator implements IQuestion {
     private Question question;
 
