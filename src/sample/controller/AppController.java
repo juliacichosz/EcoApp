@@ -29,10 +29,16 @@ public abstract class AppController implements IInitializable {
         withInput1.changeState(new NonAnsweredState(withInput1));
         allQuestions.add(withInput1);
 
+        Question q = new QuestionWithBonus(new QuestionWithInput());
+        q.setContent("test");
+        q.correctAnswer = "ans";
+        q.changeState(new NonAnsweredState(q));
+        allQuestions.add(q);
+
         Collections.shuffle(allQuestions);
 
         //TODO: sensible amount of questions
-        for(int i = 0; i < 2; i++) {
+        for(int i = 0; i < 3; i++) {
             questions.addQuestion(allQuestions.get(i));
         }
     }

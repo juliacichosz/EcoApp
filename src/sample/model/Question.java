@@ -2,7 +2,7 @@ package sample.model;
 
 import javafx.scene.control.Label;
 
-public abstract class Question implements IQuestion {
+public abstract class Question {
     String content;
     public State state;
     public String correctAnswer;
@@ -19,6 +19,15 @@ public abstract class Question implements IQuestion {
         }
     }
 
+    /*
+        Clone method represents design pattern: PROTOTYPE
+     */
+    public abstract Question clone();
+
+    public int calculatePoints() {
+        return 1;
+    }
+
     public void changeState(State state) {
         this.state = state;
     }
@@ -29,16 +38,6 @@ public abstract class Question implements IQuestion {
 
     public void clickNext(Label label) {
         state.clickNext(label);
-    }
-
-    /*
-        Clone method represents design pattern: PROTOTYPE
-     */
-    public abstract Question clone();
-
-    @Override
-    public int calculatePoints() {
-        return 1;
     }
 
     public void setContent(String content) {
@@ -62,6 +61,6 @@ public abstract class Question implements IQuestion {
     }
 
     public boolean isCorrect() {
-        return correctAnswer == userAnswer;
+        return correctAnswer.equals(userAnswer);
     }
 }

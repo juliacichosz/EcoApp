@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.EcoInformations3">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView>
+               <image>
+                  <Image url="@brownPaper.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="109.0" opacity="0.9" text="18. Taking your own food containers for shopping." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="147.0" opacity="0.9" prefHeight="29.0" prefWidth="561.0" text="19. Minimizing the purchase of unnecessary products." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="26.0" layoutY="186.0" opacity="0.9" text="20. Buying second-hand products." textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="28.0" layoutY="221.0" opacity="0.9" text="21. Buying better-quality things so that they last longer." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="26.0" layoutY="259.0" opacity="0.9" text="22. Eating less meat." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="26.0" layoutY="296.0" opacity="0.9" text="23. Scanning instead of printing." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="next" layoutX="335.0" layoutY="346.0" mnemonicParsing="false" onAction="#goToNextPage" opacity="0.9" prefHeight="30.0" prefWidth="79.0" text="Next" AnchorPane.rightAnchor="165.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="previous" layoutX="165.0" layoutY="346.0" mnemonicParsing="false" onAction="#goToPreviousPage" opacity="0.9" text="Previous" AnchorPane.leftAnchor="165.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="29.0" layoutY="34.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="16. Using gray toilet paper." AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="29.0" layoutY="71.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="17. Buying food from local farmers." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Open Sans Semibold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

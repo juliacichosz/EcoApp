@@ -2,17 +2,29 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.TestMenu">
-   <children>
-      <Button layoutX="231.0" layoutY="138.0" mnemonicParsing="false" onAction="#goToInputQuestionsCategory" text="Input questions" />
-      <Button layoutX="218.0" layoutY="216.0" mnemonicParsing="false" onAction="#goToOneChoiceQuestionsCategory" text="One choice question" />
-      <Label layoutX="221.0" layoutY="43.0" text="Choose category">
+    <children>
+        <ImageView>
+            <image>
+                <Image url="@brownPaper.jpg" />
+            </image>
+        </ImageView>
+      <Button layoutX="109.0" layoutY="242.0" mnemonicParsing="false" onAction="#goToInputQuestionsCategory" opacity="0.9" prefHeight="30.0" prefWidth="165.0" text="Input questions" AnchorPane.leftAnchor="109.0">
          <font>
-            <Font size="16.0" />
+            <Font name="Open Sans Semibold" size="14.0" />
+         </font></Button>
+      <Button layoutX="333.0" layoutY="242.0" mnemonicParsing="false" onAction="#goToOneChoiceQuestionsCategory" opacity="0.9" prefWidth="165.0" text="One choice questions" AnchorPane.rightAnchor="109.0">
+         <font>
+            <Font name="Open Sans Semibold" size="14.0" />
+         </font></Button>
+      <Label layoutX="188.0" layoutY="124.0" opacity="0.9" text="Choose category" AnchorPane.leftAnchor="188.0" AnchorPane.rightAnchor="188.0">
+         <font>
+            <Font name="Open Sans Semibold" size="28.0" />
          </font>
       </Label>
    </children>

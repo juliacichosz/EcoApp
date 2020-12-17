@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.EcoInformations1">
+    <ImageView>
+        <image>
+            <Image url="@brownPaper.jpg" />
+        </image>
+    </ImageView>
+   <Label alignment="CENTER" layoutX="78.0" layoutY="27.0" opacity="0.9" text="Easy ways to go greener at home:" textAlignment="CENTER" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="74.0">
+      <font>
+         <Font name="Open Sans Semibold" size="28.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="28.0" layoutY="76.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="1. Refilling the fridge and supplies on a regular basis." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+      <font>
+         <Font name="Open Sans Semibold" size="20.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="28.0" layoutY="113.0" opacity="0.9" text="2. Using vegetable and fruit washing water to water plants." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+      <font>
+         <Font name="Open Sans Semibold" size="20.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="26.0" layoutY="151.0" opacity="0.9" text="3. Using reusable food boxes." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+      <font>
+         <Font name="Open Sans Semibold" size="20.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="26.0" layoutY="186.0" opacity="0.9" text="4. Not wasting food." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+      <font>
+         <Font name="Open Sans Semibold" size="20.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="28.0" layoutY="221.0" opacity="0.9" text="5. Cooking for two days plus extra for freezing." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+      <font>
+         <Font name="Open Sans Semibold" size="20.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="26.0" layoutY="259.0" opacity="0.9" text="6. Using kitchen cloths instead of disposable towels." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+      <font>
+         <Font name="Open Sans Semibold" size="20.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="26.0" layoutY="296.0" opacity="0.9" text="7. Cooking with a lid to save electricity and save time." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+      <font>
+         <Font name="Open Sans Semibold" size="20.0" />
+      </font>
+   </Label>
+   <Button fx:id="next" layoutX="356.0" layoutY="346.0" mnemonicParsing="false" onAction="#goToNextPage" opacity="0.9" prefHeight="30.0" prefWidth="79.0" text="Next" AnchorPane.rightAnchor="165.0">
+      <font>
+         <Font name="Open Sans Semibold" size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="menu" layoutX="171.0" layoutY="346.0" mnemonicParsing="false" onAction="#goToMenu" opacity="0.9" prefWidth="79.0" text="Menu" AnchorPane.leftAnchor="165.0">
+      <font>
+         <Font name="Open Sans Semibold" size="14.0" />
+      </font>
+   </Button>
+
+</AnchorPane>

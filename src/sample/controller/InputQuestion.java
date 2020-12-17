@@ -12,7 +12,7 @@ public class InputQuestion extends AppController {
     public TextField input;
     public Label alert;
     public Label question;
-    private QuestionWithInput currentQuestion;
+    private Question currentQuestion;
     private final IIterator iterator = questions.createIterator();
 
     @Override
@@ -32,7 +32,7 @@ public class InputQuestion extends AppController {
     }
 
     private void updateQuestion() {
-        currentQuestion = (QuestionWithInput) iterator.getNetx();
+        currentQuestion = iterator.getNetx();
     }
 
     public void answerQuestion() {

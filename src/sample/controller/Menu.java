@@ -17,6 +17,6 @@ public class Menu extends AppController {
     }
 
     public void goToInformationsMenu(ActionEvent actionEvent) {
-        goTo.execute(actionEvent, "../view/informationsMenu.fxml");
+        goTo.execute(actionEvent, "../view/ecoInformations1.fxml");
     }
 }

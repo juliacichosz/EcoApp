@@ -3,14 +3,37 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.InputQuestion">
-   <children>
-      <Label fx:id="question" layoutX="157.0" layoutY="88.0" prefHeight="17.0" prefWidth="264.0" text="Question" />
-      <TextField fx:id="input" layoutX="157.0" layoutY="159.0" promptText="Input" />
-      <Button fx:id="answer" layoutX="157.0" layoutY="308.0" mnemonicParsing="false" onAction="#answerQuestion" text="Answer" />
-      <Button fx:id="next" layoutX="339.0" layoutY="308.0" mnemonicParsing="false" onAction="#nextQuestion" text="Next" />
-      <Label fx:id="alert" layoutX="157.0" layoutY="120.0" text="Alert" />
+    <children>
+        <ImageView>
+            <image>
+                <Image url="@brownPaper.jpg" />
+            </image>
+        </ImageView>
+      <Label fx:id="question" alignment="CENTER" layoutX="103.0" layoutY="43.0" opacity="0.9" prefHeight="77.0" prefWidth="406.0" text="Question" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Open Sans Semibold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="input" layoutX="202.0" layoutY="223.0" opacity="0.9" prefHeight="30.0" prefWidth="208.0" promptText="Input" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <font>
+            <Font name="Open Sans" size="16.0" />
+         </font></TextField>
+      <Button fx:id="answer" layoutX="175.0" layoutY="308.0" mnemonicParsing="false" onAction="#answerQuestion" opacity="0.9" prefWidth="79.0" text="Answer" AnchorPane.leftAnchor="165.0">
+         <font>
+            <Font name="Open Sans Semibold" size="14.0" />
+         </font></Button>
+      <Button fx:id="next" layoutX="374.0" layoutY="308.0" mnemonicParsing="false" onAction="#nextQuestion" opacity="0.9" prefHeight="30.0" prefWidth="79.0" text="Next" AnchorPane.rightAnchor="165.0">
+         <font>
+            <Font name="Open Sans Semibold" size="14.0" />
+         </font></Button>
+      <Label fx:id="alert" alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="147.0" opacity="0.9" prefHeight="22.0" prefWidth="406.0" text="Alert" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="Open Sans Semibold" size="16.0" />
+         </font></Label>
    </children>
 </AnchorPane>

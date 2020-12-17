@@ -2,14 +2,37 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.QuestionsSummary">
-   <children>
-      <Label fx:id="question" layoutX="93.0" layoutY="82.0" prefHeight="17.0" prefWidth="368.0" text="Question" />
-      <Label fx:id="userAnswer" layoutX="107.0" layoutY="138.0" prefHeight="17.0" prefWidth="368.0" text="User answer" />
-      <Label fx:id="correctAnswer" layoutX="109.0" layoutY="211.0" prefHeight="17.0" prefWidth="403.0" text="Correct answer" />
-      <Button fx:id="next" layoutX="330.0" layoutY="299.0" mnemonicParsing="false" onAction="#goToNextQuestion" text="Next" />
-      <Button fx:id="menu" layoutX="191.0" layoutY="299.0" mnemonicParsing="false" onAction="#goToMenu" text="Menu" />
+    <children>
+        <ImageView>
+            <image>
+                <Image url="@brownPaper.jpg" />
+            </image>
+        </ImageView>
+      <Label fx:id="question" alignment="CENTER" layoutX="107.0" layoutY="37.0" opacity="0.9" prefHeight="70.0" prefWidth="403.0" text="Question" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Open Sans Semibold" size="20.0" />
+         </font></Label>
+      <Label fx:id="userAnswer" alignment="CENTER" layoutX="107.0" layoutY="123.0" opacity="0.9" prefHeight="70.0" prefWidth="403.0" text="User answer" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="Open Sans Semibold" size="20.0" />
+         </font></Label>
+      <Label fx:id="correctAnswer" alignment="CENTER" layoutX="107.0" layoutY="200.0" opacity="0.9" prefHeight="70.0" prefWidth="403.0" text="Correct answer" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font name="Open Sans Semibold" size="20.0" />
+         </font></Label>
+      <Button fx:id="next" layoutX="373.0" layoutY="312.0" mnemonicParsing="false" onAction="#goToNextQuestion" opacity="0.9" prefWidth="79.0" text="Next" AnchorPane.rightAnchor="165.0">
+         <font>
+            <Font name="Open Sans Semibold" size="14.0" />
+         </font></Button>
+      <Button fx:id="menu" layoutX="191.0" layoutY="312.0" mnemonicParsing="false" onAction="#goToMenu" opacity="0.9" prefWidth="79.0" text="Menu" AnchorPane.leftAnchor="165.0">
+         <font>
+            <Font name="Open Sans Semibold" size="14.0" />
+         </font></Button>
    </children>
 </AnchorPane>

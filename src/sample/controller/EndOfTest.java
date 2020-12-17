@@ -25,7 +25,11 @@ public class EndOfTest extends AppController {
     }
 
     public void displayScore() {
-        score.setText("You got " + User.getINSTANCE().getScore() + " points!");
+        if(User.getINSTANCE().getScore() == 1) {
+            score.setText("You got " + User.getINSTANCE().getScore() + " point!");
+        } else {
+            score.setText("You got " + User.getINSTANCE().getScore() + " points!");
+        }
     }
 
     public void goToQuestionsSummary(ActionEvent actionEvent) {
