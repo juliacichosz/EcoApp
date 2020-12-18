@@ -18,7 +18,7 @@
                 <Image url="@brownPaper.jpg" />
             </image>
         </ImageView>
-       <Label fx:id="question" alignment="CENTER" layoutX="141.0" layoutY="25.0" opacity="0.9" prefHeight="76.0" prefWidth="306.0" text="Question" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="30.0">
+       <Label fx:id="question" alignment="CENTER" layoutX="141.0" layoutY="25.0" opacity="0.9" prefHeight="76.0" prefWidth="306.0" text="Question" wrapText="true" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="30.0">
            <font>
                <Font name="Open Sans Semibold" size="20.0" />
            </font>
@@ -34,22 +34,22 @@
             <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <RadioButton fx:id="answer0" contentDisplay="CENTER" mnemonicParsing="false" opacity="0.9" prefHeight="68.0" prefWidth="306.0" text="Answer0" textAlignment="CENTER" GridPane.rowIndex="1">
+            <RadioButton fx:id="answer0" mnemonicParsing="false" opacity="0.9" prefHeight="68.0" prefWidth="306.0" text="Answer0" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="answer2" mnemonicParsing="false" opacity="0.9" prefHeight="68.0" prefWidth="306.0" text="Answer2" GridPane.rowIndex="2">
+            <RadioButton fx:id="answer2" mnemonicParsing="false" opacity="0.9" prefHeight="68.0" prefWidth="306.0" text="Answer2" wrapText="true" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="answer1" mnemonicParsing="false" opacity="0.9" prefHeight="68.0" prefWidth="306.0" text="Answer1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <RadioButton fx:id="answer1" mnemonicParsing="false" opacity="0.9" prefHeight="60.0" prefWidth="287.0" text="Answer1" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="answer3" mnemonicParsing="false" opacity="0.9" prefHeight="68.0" prefWidth="306.0" text="Answer3" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <RadioButton fx:id="answer3" mnemonicParsing="false" opacity="0.9" prefHeight="68.0" prefWidth="306.0" text="Answer3" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -64,7 +64,7 @@
          <font>
             <Font name="Open Sans Semibold" size="14.0" />
          </font></Button>
-      <Label fx:id="alert" alignment="CENTER" layoutX="147.0" layoutY="125.0" opacity="0.9" prefHeight="22.0" prefWidth="306.0" text="Alert" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="130.0">
+      <Label fx:id="alert" alignment="CENTER" layoutX="147.0" layoutY="125.0" opacity="0.9" prefHeight="22.0" prefWidth="306.0" text="Alert" wrapText="true" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="130.0">
          <font>
             <Font name="Open Sans Semibold" size="16.0" />
          </font></Label>

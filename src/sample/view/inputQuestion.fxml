@@ -15,7 +15,7 @@
                 <Image url="@brownPaper.jpg" />
             </image>
         </ImageView>
-      <Label fx:id="question" alignment="CENTER" layoutX="103.0" layoutY="43.0" opacity="0.9" prefHeight="77.0" prefWidth="406.0" text="Question" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="30.0">
+      <Label fx:id="question" alignment="CENTER" layoutX="103.0" layoutY="43.0" opacity="0.9" prefHeight="77.0" prefWidth="406.0" text="Question" wrapText="true" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="30.0">
          <font>
             <Font name="Open Sans Semibold" size="20.0" />
          </font></Label>
@@ -31,7 +31,7 @@
          <font>
             <Font name="Open Sans Semibold" size="14.0" />
          </font></Button>
-      <Label fx:id="alert" alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="147.0" opacity="0.9" prefHeight="22.0" prefWidth="406.0" text="Alert" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="130.0">
+      <Label fx:id="alert" alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="147.0" opacity="0.9" prefHeight="22.0" prefWidth="406.0" text="Alert" wrapText="true" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="130.0">
          <font>
             <Font name="Open Sans Semibold" size="16.0" />
          </font></Label>
