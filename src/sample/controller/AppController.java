@@ -10,14 +10,40 @@ import java.util.*;
  */
 public abstract class AppController implements IInitializable {
     GoTo goTo = new GoTo();
+    static Questions questions = new Questions(); //questions selected for current test
+    List<Question> allQuestions = new ArrayList<>();
 
-    static Questions questions = new Questions();
-
-    //TODO: implement a lot of valid questions
     public void getInputQuestionsCategory() {
         clear();
-        List<Question> allQuestions = new ArrayList<>();
-        
+        fillQuestionsWithInputQuestions();
+        selectQuestionsToCurrentTest();
+    }
+
+    public void getOneChoiceQuestionsCategory() {
+        clear();
+        fillQuestionsWithOneChoiceQuestions();
+        selectQuestionsToCurrentTest();
+    }
+
+    public void selectQuestionsToCurrentTest() {
+        Collections.shuffle(allQuestions);
+        selectFiveQuestions();
+    }
+
+    public void selectFiveQuestions() {
+        for(int i = 0; i < 5; i++) {
+            questions.addQuestion(allQuestions.get(i));
+        }
+    }
+
+    public void clear() {
+        questions.clear();
+        allQuestions.clear();
+        User.getINSTANCE().clearScore();
+    }
+
+    //question with input hardcoded
+    public void fillQuestionsWithInputQuestions() {
         QuestionWithInput question0 = new QuestionWithInput();
         question0.setContent("Which toothbrush should you choose?");
         question0.correctAnswer = "bamboo";
@@ -107,18 +133,10 @@ public abstract class AppController implements IInitializable {
         questionBonus7.correctAnswer = "reusable";
         questionBonus7.changeState(new NonAnsweredState(questionBonus7));
         allQuestions.add(questionBonus7);
-
-        Collections.shuffle(allQuestions);
-
-        for(int i = 0; i < 5; i++) {
-            questions.addQuestion(allQuestions.get(i));
-        }
     }
 
-    public void getOneChoiceQuestionsCategory() {
-        clear();
-        List<Question> allQuestions = new ArrayList<>();
-
+    //questions with one choice hardcoded
+    public void fillQuestionsWithOneChoiceQuestions() {
         QuestionWithOneChoice question0 = new QuestionWithOneChoice();
         question0.setContent("Which toothbrush should you choose?");
         List<String> answers0 = new ArrayList<>();
@@ -298,16 +316,5 @@ public abstract class AppController implements IInitializable {
         question14.correctAnswer = "buying energy-saving appliances";
         question14.changeState(new NonAnsweredState(question14));
         allQuestions.add(question14);
-
-        Collections.shuffle(allQuestions);
-
-        for(int i = 0; i < 5; i++) {
-            questions.addQuestion(allQuestions.get(i));
-        }
-    }
-
-    public void clear() {
-        questions.clear();
-        User.getINSTANCE().clearScore();
     }
 }
