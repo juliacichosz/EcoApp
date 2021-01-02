@@ -63,13 +63,13 @@ public abstract class AppController implements IInitializable {
         allQuestions.add(question2);
 
         QuestionWithInput question3 = new QuestionWithInput();
-        question3.setContent("A ... instead of a bath.");
+        question3.setContent("Taking a ... instead of a bath.");
         question3.correctAnswer = "shower";
         question3.changeState(new NonAnsweredState(question3));
         allQuestions.add(question3);
 
         QuestionWithInput question4 = new QuestionWithInput();
-        question4.setContent("Use ... straws instead of plastic.");
+        question4.setContent("Use ... straws instead of plastic ones.");
         question4.correctAnswer = "metal";
         question4.changeState(new NonAnsweredState(question4));
         allQuestions.add(question4);
@@ -99,7 +99,7 @@ public abstract class AppController implements IInitializable {
         allQuestions.add(questionBonus1);
 
         Question questionBonus2 = new QuestionWithBonus(new QuestionWithInput());
-        questionBonus2.setContent("Buy tickets in ... ... .");
+        questionBonus2.setContent("Buy tickets in an ... ... .");
         questionBonus2.correctAnswer = "electronic version";
         questionBonus2.changeState(new NonAnsweredState(questionBonus2));
         allQuestions.add(questionBonus2);
@@ -118,18 +118,18 @@ public abstract class AppController implements IInitializable {
 
         Question questionBonus5 = new QuestionWithBonus(new QuestionWithInput());
         questionBonus5.setContent("Buy ... appliances.");
-        questionBonus5.correctAnswer = "energy-saving";
+        questionBonus5.correctAnswer = "energy-efficient";
         questionBonus5.changeState(new NonAnsweredState(questionBonus5));
         allQuestions.add(questionBonus5);
 
         Question questionBonus6 = new QuestionWithBonus(new QuestionWithInput());
-        questionBonus6.setContent("Use ... instead of an elevator");
+        questionBonus6.setContent("Use ... instead of an elevator.");
         questionBonus6.correctAnswer = "stairs";
         questionBonus6.changeState(new NonAnsweredState(questionBonus6));
         allQuestions.add(questionBonus6);
 
         Question questionBonus7 = new QuestionWithBonus(new QuestionWithInput());
-        questionBonus7.setContent("Use ... food boxes.");
+        questionBonus7.setContent("Use ... food containers.");
         questionBonus7.correctAnswer = "reusable";
         questionBonus7.changeState(new NonAnsweredState(questionBonus7));
         allQuestions.add(questionBonus7);
@@ -167,7 +167,7 @@ public abstract class AppController implements IInitializable {
         answers2.add("cloth");
         answers2.add("paper towel");
         answers2.add("toilet paper");
-        answers2.add("brown toilet paper");
+        answers2.add("recycled toilet paper");
         question2.answers = answers2;
         question2.correctAnswer = "cloth";
         question2.changeState(new NonAnsweredState(question2));
@@ -179,16 +179,16 @@ public abstract class AppController implements IInitializable {
         answers3.add("freezing food");
         answers3.add("cooking with a lid");
         answers3.add("eating less meat");
-        answers3.add("cooking for one day");
+        answers3.add("cooking for one day at a time");
         question3.answers = answers3;
-        question3.correctAnswer = "cooking for one day";
+        question3.correctAnswer = "cooking for one day at a time";
         question3.changeState(new NonAnsweredState(question3));
         allQuestions.add(question3);
 
         QuestionWithOneChoice question4 = new QuestionWithOneChoice();
         question4.setContent("Indicate which behavior is eco-friendly:");
         List<String> answers4 = new ArrayList<>();
-        answers4.add("buying worse-quality things against consumerism");
+        answers4.add("buying worse-quality things in support of consumerism");
         answers4.add("buying better-quality things so that they look better");
         answers4.add("buying worse-quality things to save money");
         answers4.add("buying better-quality things so that they last longer");
@@ -237,20 +237,20 @@ public abstract class AppController implements IInitializable {
         question8.setContent("Indicate which behavior isn't eco-friendly:");
         List<String> answers8 = new ArrayList<>();
         answers8.add("eco driving");
-        answers8.add("using gray gift wrapping paper");
+        answers8.add("using brown gift wrapping paper");
         answers8.add("littering");
-        answers8.add("using stairs instead of an elevator");
+        answers8.add("using the stairs instead of an elevator");
         question8.answers = answers8;
         question8.correctAnswer = "littering";
         question8.changeState(new NonAnsweredState(question8));
         allQuestions.add(question8);
 
         QuestionWithOneChoice question9 = new QuestionWithOneChoice();
-        question9.setContent("Which is the best for environment?");
+        question9.setContent("Which is best for the environment?");
         List<String> answers9 = new ArrayList<>();
         answers9.add("buying food from local farmers");
-        answers9.add("bath instead of a shower");
-        answers9.add("overheating the room instead of an extra blanket");
+        answers9.add("taking a bath instead of a shower");
+        answers9.add("overheating the room instead of using an extra blanket");
         answers9.add("watering plants with fresh water");
         question9.answers = answers9;
         question9.correctAnswer = "buying food from local farmers";
@@ -258,14 +258,14 @@ public abstract class AppController implements IInitializable {
         allQuestions.add(question9);
 
         QuestionWithOneChoice question10 = new QuestionWithOneChoice();
-        question10.setContent("Which is the best for environment?");
+        question10.setContent("Which is best for the environment?");
         List<String> answers10 = new ArrayList<>();
-        answers10.add("buying tickets in electronic version");
-        answers10.add("buying tickets made of recycled plastic");
-        answers10.add("buying tickets with delivery");
+        answers10.add("buying tickets in an electronic version");
+        answers10.add("buying tickets made from recycled plastic");
+        answers10.add("buying tickets with shipping");
         answers10.add("buying tickets made of paper");
         question10.answers = answers10;
-        question10.correctAnswer = "buying tickets in electronic version";
+        question10.correctAnswer = "buying tickets in an electronic version";
         question10.changeState(new NonAnsweredState(question10));
         allQuestions.add(question10);
 
@@ -275,7 +275,7 @@ public abstract class AppController implements IInitializable {
         answers11.add("freezing food");
         answers11.add("using a vacuum cleaner");
         answers11.add("baking several dishes in the oven at once");
-        answers11.add("using reusable food boxes");
+        answers11.add("using reusable food containers");
         question11.answers = answers11;
         question11.correctAnswer = "using a vacuum cleaner";
         question11.changeState(new NonAnsweredState(question11));
@@ -289,12 +289,12 @@ public abstract class AppController implements IInitializable {
         answers12.add("food containers");
         answers12.add("no shopping list");
         question12.answers = answers12;
-        question12.correctAnswer = "leave for watering the plants";
+        question12.correctAnswer = "food containers";
         question12.changeState(new NonAnsweredState(question12));
         allQuestions.add(question12);
 
         QuestionWithOneChoice question13 = new QuestionWithOneChoice();
-        question13.setContent("Is it ecological to use straws?");
+        question13.setContent("Is it eco-friendly to use straws?");
         List<String> answers13 = new ArrayList<>();
         answers13.add("yes");
         answers13.add("no");
@@ -308,12 +308,12 @@ public abstract class AppController implements IInitializable {
         QuestionWithOneChoice question14 = new QuestionWithOneChoice();
         question14.setContent("Indicate which behavior is eco-friendly:");
         List<String> answers14 = new ArrayList<>();
-        answers14.add("buying energy-saving appliances");
-        answers14.add("maximizing the purchase of unnecessary products");
-        answers14.add("using disposable razors");
+        answers14.add("buying energy-efficient appliances");
+        answers14.add("purchasing unnecessary products");
+        answers14.add("using disposable razor blades");
         answers14.add("stocking up on food");
         question14.answers = answers14;
-        question14.correctAnswer = "buying energy-saving appliances";
+        question14.correctAnswer = "buying energy-efficient appliances";
         question14.changeState(new NonAnsweredState(question14));
         allQuestions.add(question14);
     }

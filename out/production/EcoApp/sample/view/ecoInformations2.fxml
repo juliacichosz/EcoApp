@@ -16,12 +16,12 @@
                   <Image url="@brownPaper.jpg" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" layoutX="27.0" layoutY="109.0" opacity="0.9" text="10. Freezing food, lemon juice and herbs in ice cubes." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="CENTER" layoutX="27.0" layoutY="109.0" opacity="0.9" text="10. Freezing food, lemon juice and herbs in ice cube trays." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="27.0" layoutY="147.0" opacity="0.9" text="11. A shower instead of a bath." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="CENTER" layoutX="27.0" layoutY="147.0" opacity="0.9" text="11. Taking a shower instead of a bath." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
@@ -31,7 +31,7 @@
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="28.0" layoutY="221.0" opacity="0.9" text="13. Using a razor with a conventional blade." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="CENTER" layoutX="28.0" layoutY="221.0" opacity="0.9" text="13. Using a safety razor instead of single use razor blades." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
@@ -56,12 +56,12 @@
                   <Font name="Open Sans Semibold" size="14.0" />
                </font>
             </Button>
-            <Label layoutX="29.0" layoutY="34.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="8. Baking several dishes in the oven at once." AnchorPane.leftAnchor="24.0">
+            <Label layoutX="29.0" layoutY="34.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="8. Baking several dishes in the oven simultaneously." AnchorPane.leftAnchor="24.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
             </Label>
-            <Label alignment="TOP_LEFT" layoutX="29.0" layoutY="71.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="9. Using metal straws instead of plastic." textAlignment="CENTER" AnchorPane.leftAnchor="24.0">
+            <Label alignment="TOP_LEFT" layoutX="29.0" layoutY="71.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="9. Using metal straws instead of plastic ones." textAlignment="CENTER" AnchorPane.leftAnchor="24.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>

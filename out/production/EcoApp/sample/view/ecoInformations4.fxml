@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.EcoInformations4">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="600.0">
@@ -17,12 +16,12 @@
                   <Image url="@brownPaper.jpg" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" layoutX="27.0" layoutY="109.0" opacity="0.9" text="26. Recycling of gift wrapping paper and bags." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="CENTER" layoutX="27.0" layoutY="109.0" opacity="0.9" text="26. Recycling wrapping paper and gift bags." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
             </Label>
-            <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="147.0" opacity="0.9" prefHeight="29.0" prefWidth="561.0" text="27. Using gray gift wrapping paper." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="TOP_LEFT" layoutX="27.0" layoutY="147.0" opacity="0.9" prefHeight="29.0" prefWidth="561.0" text="27. Using brown gift wrapping paper." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
@@ -42,7 +41,7 @@
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="26.0" layoutY="296.0" opacity="0.9" text="31. Extinguishing unnecessary light." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="CENTER" layoutX="26.0" layoutY="296.0" opacity="0.9" text="31. Turning off unnecessary light." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
@@ -57,7 +56,7 @@
                   <Font name="Open Sans Semibold" size="14.0" />
                </font>
             </Button>
-            <Label layoutX="29.0" layoutY="34.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="24. Buying tickets in electronic version." AnchorPane.leftAnchor="20.0">
+            <Label layoutX="29.0" layoutY="34.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="24. Buying tickets in an electronic version." AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>

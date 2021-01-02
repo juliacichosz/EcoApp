@@ -19,7 +19,7 @@ public class PopupCongratulations implements IObserver {
         int score = User.getINSTANCE().getScore();
 
         popupwindow.initModality(Modality.APPLICATION_MODAL);
-        popupwindow.setTitle("This is a pop up window");
+        popupwindow.setTitle("EcoApp");
 
         Label label1 = new Label("Congratulations! You did great!");
 

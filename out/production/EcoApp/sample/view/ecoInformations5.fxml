@@ -16,7 +16,7 @@
                   <Image url="@brownPaper.jpg" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" layoutX="27.0" layoutY="109.0" opacity="0.9" text="34. Buying energy-saving appliances." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="CENTER" layoutX="27.0" layoutY="109.0" opacity="0.9" text="34. Buying energy-efficient appliances." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
@@ -31,12 +31,12 @@
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="28.0" layoutY="221.0" opacity="0.9" text="37. Not opening windows when radiators are open." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="CENTER" layoutX="28.0" layoutY="221.0" opacity="0.9" text="37. Not opening windows when radiators are on." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="26.0" layoutY="259.0" opacity="0.9" text="38. No littering." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="CENTER" layoutX="26.0" layoutY="259.0" opacity="0.9" text="38. Not littering." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
@@ -56,12 +56,12 @@
                   <Font name="Open Sans Semibold" size="14.0" />
                </font>
             </Button>
-            <Label layoutX="29.0" layoutY="34.0" opacity="0.9" prefHeight="29.0" prefWidth="541.0" text="32. Walking, cycling, public transport instead of driving." AnchorPane.leftAnchor="20.0">
+            <Label layoutX="29.0" layoutY="34.0" opacity="0.9" prefHeight="29.0" prefWidth="561.0" text="32. Choosing cycling or public transport instead of driving." AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>
             </Label>
-            <Label alignment="TOP_LEFT" layoutX="29.0" layoutY="71.0" opacity="0.9" prefHeight="29.0" prefWidth="571.0" text="33. An extra blanket instead of overheating the room." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+            <Label alignment="TOP_LEFT" layoutX="29.0" layoutY="71.0" opacity="0.9" prefHeight="29.0" prefWidth="561.0" text="33. Using a blanket instead of turning up the radiator." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="Open Sans Semibold" size="20.0" />
                </font>

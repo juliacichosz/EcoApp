@@ -17,7 +17,7 @@
          <font>
             <Font name="Open Sans Semibold" size="18.0" />
          </font></Button>
-      <Button layoutX="213.0" layoutY="121.0" mnemonicParsing="false" onAction="#goToInformationsMenu" opacity="0.9" prefHeight="30.0" prefWidth="183.0" text="Improve your skills" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0">
+      <Button layoutX="213.0" layoutY="121.0" mnemonicParsing="false" onAction="#goToInformationsMenu" opacity="0.9" prefHeight="30.0" prefWidth="183.0" text="Expand your knowledge" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0">
          <font>
             <Font name="Open Sans Semibold" size="18.0" />
          </font></Button>

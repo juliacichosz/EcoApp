@@ -18,7 +18,7 @@
          <Font name="Open Sans Semibold" size="28.0" />
       </font>
    </Label>
-   <Label alignment="CENTER" layoutX="28.0" layoutY="76.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="1. Refilling the fridge and supplies on a regular basis." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+   <Label alignment="TOP_LEFT" layoutX="28.0" layoutY="76.0" opacity="0.9" prefHeight="29.0" prefWidth="509.0" text="1. Refilling the fridge and pantry on a regular basis." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
       <font>
          <Font name="Open Sans Semibold" size="20.0" />
       </font>
@@ -28,7 +28,7 @@
          <Font name="Open Sans Semibold" size="20.0" />
       </font>
    </Label>
-   <Label alignment="CENTER" layoutX="26.0" layoutY="151.0" opacity="0.9" text="3. Using reusable food boxes." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+   <Label alignment="CENTER" layoutX="26.0" layoutY="151.0" opacity="0.9" text="3. Using reusable food containers." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
       <font>
          <Font name="Open Sans Semibold" size="20.0" />
       </font>
@@ -48,7 +48,7 @@
          <Font name="Open Sans Semibold" size="20.0" />
       </font>
    </Label>
-   <Label alignment="CENTER" layoutX="26.0" layoutY="296.0" opacity="0.9" text="7. Cooking with a lid to save electricity and save time." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+   <Label alignment="CENTER" layoutX="26.0" layoutY="296.0" opacity="0.9" text="7. Cooking with a lid to save electricity and time." textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
       <font>
          <Font name="Open Sans Semibold" size="20.0" />
       </font>

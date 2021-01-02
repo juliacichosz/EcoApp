@@ -14,11 +14,11 @@
                 <Image url="@brownPaper.jpg" />
             </image>
         </ImageView>
-      <Button layoutX="109.0" layoutY="242.0" mnemonicParsing="false" onAction="#goToInputQuestionsCategory" opacity="0.9" prefHeight="30.0" prefWidth="165.0" text="Input questions" AnchorPane.leftAnchor="109.0">
+      <Button layoutX="109.0" layoutY="242.0" mnemonicParsing="false" onAction="#goToInputQuestionsCategory" opacity="0.9" prefHeight="30.0" prefWidth="178.0" text="Open-ended questions" AnchorPane.leftAnchor="100.0">
          <font>
             <Font name="Open Sans Semibold" size="14.0" />
          </font></Button>
-      <Button layoutX="333.0" layoutY="242.0" mnemonicParsing="false" onAction="#goToOneChoiceQuestionsCategory" opacity="0.9" prefWidth="165.0" text="One choice questions" AnchorPane.rightAnchor="109.0">
+      <Button layoutX="333.0" layoutY="242.0" mnemonicParsing="false" onAction="#goToOneChoiceQuestionsCategory" opacity="0.9" prefHeight="30.0" prefWidth="178.0" text="Single choice questions" AnchorPane.rightAnchor="100.0">
          <font>
             <Font name="Open Sans Semibold" size="14.0" />
          </font></Button>
