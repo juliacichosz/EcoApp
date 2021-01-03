@@ -7,4 +7,4 @@ There are two modes: the user can learn about ecology at home or take a test bas
 answers and pick one of them or choose questions with a field for entering the answer.
 
 ### Screenshots
-![](https://imgur.com/a/EyOyS1h)
+![](<blockquote class="imgur-embed-pub" lang="en" data-id="a/EyOyS1h" data-context="false" ><a href="//imgur.com/a/EyOyS1h"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
