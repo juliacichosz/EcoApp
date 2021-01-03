@@ -8,3 +8,5 @@ answers and pick one of them or choose questions with a field for entering the a
 
 ### Screenshots
 ![](https://i.imgur.com/hgu5eOW.png)
+![](https://i.imgur.com/lrQpxF6.png)
+![](https://i.imgur.com/Kt2OUvK.png)
